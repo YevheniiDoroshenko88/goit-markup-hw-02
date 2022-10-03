@@ -1,0 +1,70 @@
+.page-header {
+    background-color: #FFFFFF;;
+}
+.logo {
+    color: #2196F3;
+    font-size: 26px;
+    text-decoration: none;
+}
+.site-nav a {
+    color: #212121;
+    font-size: 14px;
+    text-decoration: none;
+    
+}
+.site-nav :hover {
+    color: #2196F3;   
+}
+.auth-nav a {
+    color: #757575;
+    text-decoration: none;
+
+}
+.auth-nav :hover {
+    color: #2196F3;
+    
+}
+.hero {
+    background-color: #2F303A;
+}
+.subject {
+    color: #FFFFFF;
+    font-size: 44px;
+}
+.button {
+    background-color: #2196F3;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.aside {
+    background-color: #fff;
+}
+.title {
+    color: #212121;
+    font-size: 36px;
+}
+.subtitle {
+    color: #212121;
+    font-size: 14px;
+}
+.text {
+    color: #757575;
+    font-size: 14px;
+}
+.job {
+    background-color: #fff;
+}
+.team {
+    background-color: #fff;
+}
+.page-footer {
+    background-color: #2F303A
+}
+.google {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.title-new {
+    color: #212121;
+    font-size: 18px;
+}
