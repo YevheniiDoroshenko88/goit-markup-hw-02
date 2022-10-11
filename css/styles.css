@@ -2,13 +2,19 @@
     --main-color: #212121;
     --second-color: #757575;
     --background-color: #FFFFFF;
+    --secondbackground-color: #2F303A;
     --accent-color: #2196F3;
+    --background-color-current: #188CE8;
+    --background-color-team: #F5F4FA;
     --second-font: 'Raleway', sans-serif;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --mailtel-color: rgba(255, 255, 255, 0.6);
 }
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
-    background-color: #FFFFFF;
+    color: var(--background-color);
 }
 .logo {
         font-family: var(--second-font);
@@ -16,9 +22,10 @@ body {
         font-size: 26px;
         line-height: 1.2;        
         letter-spacing: 0.03em;
-        color: #000000;
+        color: var(--black-color);
         text-decoration: none;
 }
+
 .accent {
     font-family: var(--second-font);
     font-weight: 700;
@@ -30,6 +37,7 @@ body {
 .list {
     list-style: none;
 }
+
 .header-nav-link {
         font-weight: 500;
         font-size: 14px;
@@ -40,6 +48,9 @@ body {
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
+    color: var(--accent-color);
+}
+.current {
     color: var(--accent-color);
 }
 .header-auth-link {
@@ -58,7 +69,7 @@ body {
 /* hero */
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--secondbackground-color);
 }
 .hero-title {
     font-weight: 900;
@@ -67,19 +78,22 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 .button {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
+}
+.button:hover,
+.button:focus {
+    background-color: var(--background-color-current);
 }
 /* section aside */
 .visually-hidden {
@@ -103,7 +117,6 @@ body {
     color: var(--main-color);
 }
 .text-aside {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -119,6 +132,9 @@ body {
     color: var(--main-color);
 }
 /* section-team */
+.team {
+    background-color: var(--background-color-team);
+}
 .title-team {
     font-weight: 700;
     font-size: 36px;
@@ -136,7 +152,6 @@ body {
     color: var(--main-color);
 }
 .text-team {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -144,15 +159,23 @@ body {
     color: var(--second-color);
 }
 /* footer */
+.logo-second {
+    color: var(--white-color);
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
 .page-footer {
-    background-color: #2F303A;
+    background-color: var(--secondbackground-color);
 }
 .google-page {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white-color);
     text-decoration: none;
     font-style: normal;
     
@@ -162,11 +185,10 @@ body {
     color: var(--accent-color);
 }
 .footer-link {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--mailtel-color);
     text-decoration: none;
     font-style: normal;
 }
@@ -177,6 +199,7 @@ body {
 /* PAGE PORTFOLIO */
 
 .portfolio-nav-link {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -184,11 +207,11 @@ body {
     letter-spacing: 0.03em;
     color: var(--main-color);
     cursor: pointer;
-    background-color: #F5F4FA;
+    background-color: var(--background-color-team);
 }
 .portfolio-nav-link:hover,
 .portfolio-nav-link:focus {
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 .portfolio-nav-link:hover,
 .portfolio-nav-link:focus {
@@ -200,17 +223,12 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-color);
-    cursor: pointer;
-    text-decoration: none;
 }
 .portfolio-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--second-color);
-    cursor: pointer;
-    text-decoration: none;
 }
 .portfolio-link {
     text-decoration: none;
